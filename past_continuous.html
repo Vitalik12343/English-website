@@ -164,6 +164,15 @@ They were playing football while we were studying. (Вони грали у фу�
             var resultDiv = document.getElementById('result');
             resultDiv.innerHTML = 'Ви відповіли правильно на ' + correct + ' з ' + total + ' запитань.';
             resultDiv.style.display = 'block';
+             
+    if (correct === total) {
+        resultDiv.style.backgroundColor = '#2ecc71'; // Green background if all answers are correct
+        resultDiv.style.color = '#fff'; // White text color
+    } else {
+        resultDiv.style.backgroundColor = '#e74c3c'; // Red background if any answers are incorrect
+        resultDiv.style.color = '#fff'; // White text color
+    }
+            resultDiv.style.display = 'block';
         }
     </script>
 </body>
