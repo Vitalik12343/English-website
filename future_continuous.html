@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Continuous</title>
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 2em;
+            margin: 0;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        section {
+            width: 100%;
+            max-width: 720px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: normal;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .time-selection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 18px;
+            color: white;
+            background-color: #2c3e50;
+            border: none;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 10px);
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn img {
+            width: 24px;
+            height: 24px;
+            filter: invert(1);
+        }
+
+        .btn:hover {
+            background-color: #1a252f;
+            transform: translateY(-5px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .full-width-btn {
+            width: 100%;
+            max-width: 720px;
+            background-color: #ff6347;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .full-width-btn img {
+            filter: invert(1);
+        }
+
+        .full-width-btn:hover {
+            background-color: #ff4500;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #555;
+            margin-top: 20px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .btn {
+                width: calc(100% - 10px);
+            }
+            
+            .full-width-btn {
+                width: 100%;
+            }
+            
+            header h1 {
+                font-size: 1.5em;
+            }
+            
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            
+            section p {
+                font-size: 1em;
+            }
+        }
+
+        .test {
+            margin-top: 20px;
+        }
+        .question {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        .answers {
+            margin-left: 20px;
+        }
+        .answers label {
+            display: block;
+            margin: 5px 0;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 5px;
+            display: none;
+        }
+        .menu{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Time{
+    margin: 10px;
+    color: white;
+
+}
+
+
+h3{
+    margin: 0px;
+    padding: 0%;
+}
+a{
+    text-decoration: none
+}
+@media only screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column; 
+    }
+    .Time.btn{
+        font-size: 100px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Future Continuous</h1>
+    </header>
+    <a class="back-link btn full-width-btn" href="index.html">
+        <h3>На головну</h3>
+       </a>
+    <div class="menu">
+        <a href="present_simple.html" class="Time btn">Present Simple</a>
+        <a href="present_continuous.html" class="Time btn">Present Continuous</a>
+        <a href="future_simple.html" class="Time btn">Future Simple</a>
+        <a href="future_continuous.html" class="Time btn">Future Continuous</a>
+        <a href="past_continuous.html" class="Time btn">Past Continuous</a>
+        <a href="past_simple.html" class="Time btn">Past Simple</a>
+    </div>
+    <section>
+        <h2>Теорія</h2>
+        <p>
+            Future Continuous (Майбутній тривалий час) використовується для вираження дій, які триватимуть у певний момент у майбутньому.
+        </p>
+    <p>Використання: 1.Дії, які триватимуть у певний момент у майбутньому: Future Continuous використовується для опису дій, які будуть відбуватися у певний момент у майбутньому. Наприклад:
+
+        At this time tomorrow, I will be flying to Paris. (О цьому часі завтра я буду летіти до Парижа.)
+        This time next week, they will be relaxing on the beach. (У цей час наступного тижня вони будуть відпочивати на пляжі.)</p>
+        <p>
+            2.Довготривалі плани або події: Future Continuous може також використовуватися для вираження довготривалих планів або подій у майбутньому. Наприклад:
+
+            Next year, I will be studying at university. (У наступному році я буду вчитися в університеті.)
+            In five years, they will be living in a new house. (За п'ять років вони будуть жити у новому будинку.)
+        </p>
+    <p>Структура: Для утворення Future Continuous використовується допоміжне дієслово "will be" разом із дієсловом у формі причастя з закінченням -ing.
+
+        Наприклад:
+        
+        I will be studying at 8 PM tomorrow. (Я буду вчитися о 8 вечора завтра.)
+        They will be working on the project next week. (Вони будуть працювати над проектом наступного тижня.)</p>
+    <p>Приклади: I will be reading a book at 8 PM tomorrow. She will be studying when you arrive.</p>
+    <p>
+        Додаткові зауваження:Future Continuous може використовуватися для вираження планів, які вже заплановані або домовлені на майбутнє, та для вираження тривалості дій у конкретний момент часу.
+        Для утворення заперечень та питальних речень у Future Continuous використовується допоміжне дієслово "will" разом з дієсловом "to be" відповідно до особи, а також додаткові слова "not" (для заперечень) та "will" (для питань).
+    </p>
+    </section>
+
+    <section>
+    <h2>Тестові завдання</h2>
+    <div class="test">
+        <div class="question" id="q1">
+            <p>1. She ___ (play) the piano at 6 PM tomorrow.</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="a"> a) plays</label>
+                <label><input type="radio" name="q1" value="b"> b) is playing</label>
+                <label><input type="radio" name="q1" value="c"> c) will play</label>
+                <label><input type="radio" name="q1" value="d"> d) will be playing</label>
+            </div>
+        </div>
+        
+        <div class="question" id="q2">
+            <p>2. They ___ (study) at 7 PM tomorrow.</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="a"> a) study</label>
+                <label><input type="radio" name="q2" value="b"> b) are studying</label>
+                <label><input type="radio" name="q2" value="c"> c) will study</label>
+                <label><input type="radio" name="q2" value="d"> d) will be studying</label>
+            </div>
+        </div>
+        
+        <div class="question" id="q3">
+            <p>3. I ___ (read) a book at 9 PM tomorrow.</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="a"> a) read</label>
+                <label><input type="radio" name="q3" value="b"> b) am reading</label>
+                <label><input type="radio" name="q3" value="c"> c) will read</label>
+                <label><input type="radio" name="q3" value="d"> d) will be reading</label>
+            </div>
+        </div>
+
+        <div class="question" id="q4">
+            <p>4. He ___ (write) an email at 5 PM tomorrow.</p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="a"> a) write</label>
+                <label><input type="radio" name="q4" value="b"> b) is writing</label>
+                <label><input type="radio" name="q4" value="c"> c) will write</label>
+                <label><input type="radio" name="q4" value="d"> d) will be writing</label>
+            </div>
+        </div>
+
+        <div class="question" id="q5">
+            <p>5. We ___ (watch) a movie at 8 PM tomorrow.</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="a"> a) watch</label>
+                <label><input type="radio" name="q5" value="b"> b) are watching</label>
+                <label><input type="radio" name="q5" value="c"> c) will watch</label>
+                <label><input type="radio" name="q5" value="d"> d) will be watching</label>
+            </div>
+        </div>
+
+        <div class="question" id="q6">
+            <p>6. They ___ (eat) dinner at 7 PM tomorrow.</p>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="a"> a) eat</label>
+                <label><input type="radio" name="q6" value="b"> b) are eating</label>
+                <label><input type="radio" name="q6" value="c"> c) will eat</label>
+                <label><input type="radio" name="q6" value="d"> d) will be eating</label>
+            </div>
+        </div>
+
+        <div class="question" id="q7">
+            <p>7. You ___ (do) your homework at 6 PM tomorrow.</p>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="a"> a) do</label>
+                <label><input type="radio" name="q7" value="b"> b) are doing</label>
+                <label><input type="radio" name="q7" value="c"> c) will do</label>
+                <label><input type="radio" name="q7" value="d"> d) will be doing</label>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <button class="btn" onclick="checkAnswers()">Перевірити відповіді</button>
+    
+    <div class="result" id="result"></div>
+    
+    <script>
+        function checkAnswers() {
+            var answers = {
+                q1: 'd',
+                q2: 'd',
+                q3: 'd',
+                q4: 'd',
+                q5: 'd',
+                q6: 'd',
+                q7: 'd'
+            };
+            
+            var correct = 0;
+            var total = 7;
+
+            for (var question in answers) {
+                var radios = document.getElementsByName(question);
+                for (var i = 0; i < radios.length; i++) {
+                    var radio = radios[i];
+                    if (radio.checked) {
+                        if (radio.value === answers[question]) {
+                            correct++;
+                        }
+                    }
+                }
+            }
+
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Ви відповіли правильно на ' + correct + ' з ' + total + ' запитань.';
+            resultDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
