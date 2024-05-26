@@ -3,322 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Present Continuous</title>
-    <style>
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f0f0f0;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #2c3e50;
-            width: 100%;
-            padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            color: #fff;
-            font-size: 2em;
-            margin: 0;
-            text-align: center;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-        }
-
-        section {
-            width: 100%;
-            max-width: 720px;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        h2 {
-            color: #2c3e50;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            font-weight: normal;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-        }
-
-        .time-selection {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            width: 100%;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 20px 40px;
-            font-size: 18px;
-            color: white;
-            background-color: #2c3e50;
-            border: none;
-            border-radius: 50px;
-            text-align: center;
-            text-decoration: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: calc(50% - 10px);
-            box-sizing: border-box;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .btn img {
-            width: 24px;
-            height: 24px;
-            filter: invert(1);
-        }
-
-        .btn:hover {
-            background-color: #1a252f;
-            transform: translateY(-5px);
-        }
-
-        .btn:active {
-            transform: translateY(0);
-        }
-
-        .full-width-btn {
-            width: 100%;
-            max-width: 720px;
-            background-color: #ff6347;
-            border-radius: 50px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .full-width-btn img {
-            filter: invert(1);
-        }
-
-        .full-width-btn:hover {
-            background-color: #ff4500;
-        }
-
-        .footer-text {
-            font-size: 14px;
-            color: #555;
-            margin-top: 20px;
-            text-align: center;
-            position: relative;
-            width: 100%;
-        }
-
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .btn {
-                width: calc(100% - 10px);
-            }
-            
-            .full-width-btn {
-                width: 100%;
-            }
-            
-            header h1 {
-                font-size: 1.5em;
-            }
-            
-            h1, h2 {
-                font-size: 1.5em;
-            }
-            
-            section p {
-                font-size: 1em;
-            }
-        }
-
-        .test {
-            margin-top: 20px;
-        }
-        .question {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #ecf0f1;
-            border-radius: 5px;
-        }
-        .answers {
-            margin-left: 20px;
-        }
-        .answers label {
-            display: block;
-            margin: 5px 0;
-        }
-        .result {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #e74c3c;
-            color: white;
-            border-radius: 5px;
-            display: none;
-        }
-        .menu{
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.Time{
-    margin: 10px;
-    color: white;
-
-}
-
-
-h3{
-    margin: 0px;
-    padding: 0%;
-}
-a{
-    text-decoration: none
-}
-@media only screen and (max-width: 600px) {
-    .menu {
-        flex-direction: column; 
-    }
-    .Time.btn{
-        font-size: 100px;
-    }
-}
-
-    </style>
+    <title>Present Simple</title>
+    <link rel="stylesheet" href="the_times.css">
 </head>
 <body>
     <header>
-        <h1>Present Continuous</h1>
+        <h1>Past Simple</h1>
     </header>
-   
+
     <a class="back-link btn full-width-btn" href="index.html">
         <h3>На головну</h3>
     </a>
-   
-       <div class="menu">
-           <a href="present_simple.html" class="Time btn">Present Simple</a>
-           <a href="present_continuous.html" class="Time btn">Present Continuous</a>
-           <a href="future_simple.html" class="Time btn">Future Simple</a>
-           <a href="future_continuous.html" class="Time btn">Future Continuous</a>
-           <a href="past_continuous.html" class="Time btn">Past Continuous</a>
-           <a href="past_simple.html" class="Time btn">Past Simple</a>
-       </div>
 
-       <section>
-    <h2>Теорія</h2>
-    <p>Present Continuous (Теперішній тривалий час) використовується для вираження дій, які відбуваються у момент розмови або протягом певного періоду часу навколо моменту розмови.</p>
-    <p>Структура: Для утворення Present Continuous використовується допоміжне дієслово "to be" у формі present (am, is, are) разом з дієсловом у формі причастя з закінченням -ing.
-    <p>Використання: 1.Дії, що відбуваються зараз: Present Continuous використовується для опису дій, які відбуваються у момент розмови або недавно. Наприклад:
-
-        He is playing football now. (Він зараз грає у футбол.)
-        They are studying English at the moment. (Вони зараз вивчають англійську.)</p>
-        <p>
-            2.Плани та події у майбутньому: Іноді Present Continuous використовується для вираження планів або домовленостей на майбутнє. Наприклад:
-
-            We are meeting our friends tomorrow. (Ми зустрічаємося із друзями завтра.)
-            She is flying to Paris next week. (Вона летить до Парижа наступного тижня.)
-        </p>
-    <p>Додаткові зауваження:
-
-        Present Continuous часто використовується разом із словами "now" (зараз), "at the moment" (у цей момент), "currently" (в даний час) для підкреслення того, що дія відбувається саме зараз.
-        Для утворення заперечень та питальних речень у Present Continuous використовується допоміжне дієслово "to be" у відповідній формі, а також використовується частка "not" для заперечень.</p>
-    <p>Приклади: I am reading a book now. She is playing tennis at the moment.</p>
-        </section>
-
-        <section>
-    <h2>Тестові завдання</h2>
-    <div class="test">
-        <div class="question" id="q1">
-            <p>1. She ___ (play) the piano right now.</p>
-            <div class="answers">
-                <label><input type="radio" name="q1" value="a"> a) plays</label>
-                <label><input type="radio" name="q1" value="b"> b) is playing</label>
-                <label><input type="radio" name="q1" value="c"> c) played</label>
-                <label><input type="radio" name="q1" value="d"> d) will play</label>
-            </div>
-        </div>
-        
-        <div class="question" id="q2">
-            <p>2. They ___ (study) at the moment.</p>
-            <div class="answers">
-                <label><input type="radio" name="q2" value="a"> a) study</label>
-                <label><input type="radio" name="q2" value="b"> b) are studying</label>
-                <label><input type="radio" name="q2" value="c"> c) studied</label>
-                <label><input type="radio" name="q2" value="d"> d) will study</label>
-            </div>
-        </div>
-        
-        <div class="question" id="q3">
-            <p>3. I ___ (read) a book now.</p>
-            <div class="answers">
-                <label><input type="radio" name="q3" value="a"> a) read</label>
-                <label><input type="radio" name="q3" value="b"> b) am reading</label>
-                <label><input type="radio" name="q3" value="c"> c) reads</label>
-                <label><input type="radio" name="q3" value="d"> d) will read</label>
-            </div>
-        </div>
-
-        <div class="question" id="q4">
-            <p>4. He ___ (write) an email at the moment.</p>
-            <div class="answers">
-                <label><input type="radio" name="q4" value="a"> a) write</label>
-                <label><input type="radio" name="q4" value="b"> b) is writing</label>
-                <label><input type="radio" name="q4" value="c"> c) wrote</label>
-                <label><input type="radio" name="q4" value="d"> d) will write</label>
-            </div>
-        </div>
-
-        <div class="question" id="q5">
-            <p>5. We ___ (watch) a movie now.</p>
-            <div class="answers">
-                <label><input type="radio" name="q5" value="a"> a) watch</label>
-                <label><input type="radio" name="q5" value="b"> b) are watching</label>
-                <label><input type="radio" name="q5" value="c"> c) watched</label>
-                <label><input type="radio" name="q5" value="d"> d) will watch</label>
-            </div>
-        </div>
-
-        <div class="question" id="q6">
-            <p>6. They ___ (eat) dinner right now.</p>
-            <div class="answers">
-                <label><input type="radio" name="q6" value="a"> a) eat</label>
-                <label><input type="radio" name="q6" value="b"> b) are eating</label>
-                <label><input type="radio" name="q6" value="c"> c) ate</label>
-                <label><input type="radio" name="q6" value="d"> d) will eat</label>
-            </div>
-        </div>
-
-        <div class="question" id="q7">
-            <p>7. You ___ (do) your homework at the moment.</p>
-            <div class="answers">
-                <label><input type="radio" name="q7" value="a"> a) do</label>
-                <label><input type="radio" name="q7" value="b"> b) are doing</label>
-                <label><input type="radio" name="q7" value="c"> c) did</label>
-                <label><input type="radio" name="q7" value="d"> d) will do</label>
-            </div>
-        </div>
+    <div class="menu">
+        <a href="present_simple.html" class="Time btn">Present Simple</a>
+        <a href="present_continuous.html" class="Time btn">Present Continuous</a>
+        <a href="future_simple.html" class="Time btn">Future Simple</a>
+        <a href="future_continuous.html" class="Time btn">Future Continuous</a>
+        <a href="past_continuous.html" class="Time btn">Past Continuous</a>
+        <a href="past_simple.html" class="Time btn">Past Simple</a>
     </div>
+
+    <section>
+        <h2>Теорія</h2>
+        <p>Present Simple (Простий теперішній час) використовується для вираження постійних фактів, загальних правил, регулярних дій, звичок, а також для вираження почуттів, переконань та смаків.</p>
+        <p>Структура: Для допомоги утворенню речень у Present Simple використовується дієслово у його базовій формі (без закінчення -ed чи -ing для дієслів).</p>
+        <p>Для третьої особи однини (he, she, it), дієслово має закінчення -s або -es. Наприклад:</p>
+        <p>I speak English. (Я розмовляю англійською.)</p>
+        <p>She speaks English. (Вона розмовляє англійською.)</p>
+        <p>Використання:</p>
+        <p>1. Постійні факти та загальні істини: Present Simple використовується для вираження істин, які сталі та не змінюються з часом. Наприклад:</p>
+        <p>The Earth orbits around the Sun. (Земля обертається навколо Сонця.)</p>
+        <p>Water boils at 100 degrees Celsius. (Вода кипить при 100 градусах Цельсія.)</p>
+        <p>2. Регулярні дії та звички: Present Simple також використовується для опису регулярних дій або звичок. Наприклад:</p>
+        <p>I drink coffee every morning. (Я п'ю каву кожного ранку.)</p>
+        <p>She goes to the gym twice a week. (Вона ходить у спортзал двічі на тиждень.)</p>
+        <p>3. Розкладка подій у майбутньому: Іноді Present Simple використовується для вираження майбутніх подій, особливо у зв'язку з офіційними або розкладними подіями. Наприклад:</p>
+        <p>The train leaves at 9 AM tomorrow. (Поїзд відправляється о 9 ранку завтра.)</p>
+        <p>Додаткові зауваження: Для утворення заперечень та питальних речень у Present Simple використовується допоміжне дієслово "do" (для особових займенників I, you, we, they) або "does" (для третьої особи однини), разом з дієсловом у його базовій формі.</p>
+        <p>Дієслово "to be" має власне правило утворення в Present Simple: am, is, are.</p>
+        <p>Приклади: I go to school every day. She plays tennis on weekends.</p>
+    </section>
+
+    <section>
+        <h2>Тестові завдання</h2>
+        <div class="test">
+            <div class="question" id="q1">
+                <p>1. She ___ (play) the piano every evening.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="a"> a) plays</label>
+                    <label><input type="radio" name="q1" value="b"> b) is playing</label>
+                    <label><input type="radio" name="q1" value="c"> c) played</label>
+                    <label><input type="radio" name="q1" value="d"> d) will play</label>
+                </div>
+            </div>
+            
+            <div class="question" id="q2">
+                <p>2. They ___ (study) every day.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="a"> a) study</label>
+                    <label><input type="radio" name="q2" value="b"> b) are studying</label>
+                    <label><input type="radio" name="q2" value="c"> c) studied</label>
+                    <label><input type="radio" name="q2" value="d"> d) will study</label>
+                </div>
+            </div>
+            
+            <div class="question" id="q3">
+                <p>3. I ___ (read) books every night.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="a"> a) read</label>
+                    <label><input type="radio" name="q3" value="b"> b) am reading</label>
+                    <label><input type="radio" name="q3" value="c"> c) reads</label>
+                    <label><input type="radio" name="q3" value="d"> d) will read</label>
+                </div>
+            </div>
+
+            <div class="question" id="q4">
+                <p>4. He ___ (like) to play soccer.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="a"> a) like</label>
+                    <label><input type="radio" name="q4" value="b"> b) likes</label>
+                    <label><input type="radio" name="q4" value="c"> c) is liking</label>
+                    <label><input type="radio" name="q4" value="d"> d) liked</label>
+                </div>
+            </div>
+
+            <div class="question" id="q5">
+                <p>5. We ___ (go) to the gym on Mondays.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q5" value="a"> a) go</label>
+                    <label><input type="radio" name="q5" value="b"> b) goes</label>
+                    <label><input type="radio" name="q5" value="c"> c) going</label>
+                    <label><input type="radio" name="q5" value="d"> d) went</label>
+                </div>
+            </div>
+
+            <div class="question" id="q6">
+                <p>6. They ___ (live) in London.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q6" value="a"> a) live</label>
+                    <label><input type="radio" name="q6" value="b"> b) lives</label>
+                    <label><input type="radio" name="q6" value="c"> c) lived</label>
+                    <label><input type="radio" name="q6" value="d"> d) living</label>
+                </div>
+            </div>
+
+            <div class="question" id="q7">
+                <p>7. You ___ (be) my best friend.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q7" value="a"> a) are</label>
+                    <label><input type="radio" name="q7" value="b"> b) is</label>
+                    <label><input type="radio" name="q7" value="c"> c) was</label>
+                    <label><input type="radio" name="q7" value="d"> d) be</label>
+                </div>
+            </div>
+        </div>
     </section>
     
     <button class="btn" onclick="checkAnswers()">Перевірити відповіді</button>
@@ -328,13 +127,13 @@ a{
     <script>
         function checkAnswers() {
             var answers = {
-                q1: 'b',
-                q2: 'b',
-                q3: 'b',
+                q1: 'a',
+                q2: 'a',
+                q3: 'a',
                 q4: 'b',
-                q5: 'b',
-                q6: 'b',
-                q7: 'b'
+                q5: 'a',
+                q6: 'a',
+                q7: 'a'
             };
             
             var correct = 0;
